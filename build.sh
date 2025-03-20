@@ -59,7 +59,7 @@ fi
 "$SCRIPT/make-bootimage.sh" "${TMPDOWN}/KERNEL_OBJ" "${TMPDOWN}/halium-boot-ramdisk.img" "${TMP}/partitions/boot.img"
 
 cp -av overlay/* "${TMP}/"
-"$SCRIPT/build-tarball-mainline.sh" jasmine_sprout "${OUT}" "${TMP}"
+"$SCRIPT/build-tarball-mainline.sh" whyred "${OUT}" "${TMP}"
 # create device tarball for https://wiki.debian.org/UsrMerge rootfs
 "$SCRIPT/build-tarball-mainline.sh" "${deviceinfo_codename}" "${OUT}" "${TMP}" "true"
 

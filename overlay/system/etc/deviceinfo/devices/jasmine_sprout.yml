@@ -1,0 +1,19 @@
+default:
+  Vendor: Xiaomi
+
+jasmine_sprout:
+  PrettyName: Mi A2
+  DeviceType: phone
+  GridUnit: 21
+  SupportedOrientations:
+    - Portrait
+    - Landscape
+    - InvertedLandscape
+  DoubleTapToWake:
+    - /proc/nvt_wake_gesture|1|0
+  MirAndroidPlatformClientEglFlush:
+    - "!/usr/bin/unity8,!/usr/bin/lomiri,all"
+  MirAndroidPlatformServerEglSync:
+    - false
+  MirAndroidPlatformServerPartialUpdates:
+    - true
